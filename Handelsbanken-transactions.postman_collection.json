@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "c96a6df8-ff6f-4035-8a5a-863cb8589bb1",
+		"name": "Handelsbanken-transactions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAccounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransactions",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI1"
+					},
+					{
+						"key": "PSU-IP-Address",
+						"value": "192.102.28.2"
+					},
+					{
+						"key": "TPP-Request-ID",
+						"value": "c8271b81-4229-5a1f-bf9c-758f11c1f5b1"
+					},
+					{
+						"key": "TPP-Transaction-ID",
+						"value": "6b24ce42-237f-4303-a917-cf778e5013d6"
+					},
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "{{Hanselbanken}}"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://sandbox.handelsbanken.com/openbanking/psd2/v2/accounts/ae57e780-6cf3-11e9-9c41-e957ce7d7d69/transactions",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"handelsbanken",
+						"com"
+					],
+					"path": [
+						"openbanking",
+						"psd2",
+						"v2",
+						"accounts",
+						"ae57e780-6cf3-11e9-9c41-e957ce7d7d69",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://sandbox.handelsbanken.com/openbanking/",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "scope",
+				"value": "AIS",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "accessToken",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://sandbox.handelsbanken.com/openbanking/oauth2/token/1.0",
+				"type": "string"
+			},
+			{
+				"key": "state",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "Handelsbanken-transactions",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "62dec6b3-1814-4ca2-864a-c33b91ef6007",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

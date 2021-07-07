@@ -1,0 +1,86 @@
+{
+    "transactions": [
+        {
+            "status": "PENDING",
+            "amount": {
+                "currency": "SEK",
+                "content": 9648549
+            },
+            "transactionDate": "2017-12-31",
+            "creditDebit": "CREDITED",
+            "remittanceInformation": "Höga belopp är"
+        },
+        {
+            "status": "BOOKED",
+            "amount": {
+                "currency": "SEK",
+                "content": 1235654566877
+            },
+            "ledgerDate": "2017-12-01",
+            "transactionDate": "2017-12-01",
+            "creditDebit": "DEBITED",
+            "remittanceInformation": "Maximal längd.",
+            "balance": {
+                "balanceType": "BOOKED",
+                "amount": {
+                    "currency": "SEK",
+                    "content": 500331309280
+                }
+            }
+        },
+        {
+            "status": "BOOKED",
+            "amount": {
+                "currency": "SEK",
+                "content": 3847912993
+            },
+            "ledgerDate": "2017-11-01",
+            "transactionDate": "2017-11-01",
+            "creditDebit": "CREDITED",
+            "remittanceInformation": "14 tecken max.",
+            "balance": {
+                "balanceType": "BOOKED",
+                "amount": {
+                    "currency": "SEK",
+                    "content": 1735985876157
+                }
+            }
+        },
+        {
+            "status": "BOOKED",
+            "amount": {
+                "currency": "SEK",
+                "content": 29344300000
+            },
+            "ledgerDate": "2017-10-21",
+            "transactionDate": "2017-10-21",
+            "creditDebit": "DEBITED",
+            "remittanceInformation": "Maximal sträng",
+            "balance": {
+                "balanceType": "BOOKED",
+                "amount": {
+                    "currency": "SEK",
+                    "content": 1732137963164
+                }
+            }
+        },
+        {
+            "status": "BOOKED",
+            "amount": {
+                "currency": "SEK",
+                "content": 349875348
+            },
+            "ledgerDate": "2017-09-30",
+            "transactionDate": "2017-09-30",
+            "creditDebit": "CREDITED",
+            "remittanceInformation": "Längd 14 Tecke",
+            "balance": {
+                "balanceType": "BOOKED",
+                "amount": {
+                    "currency": "SEK",
+                    "content": 1741482263164
+                }
+            }
+        }
+    ]
+}

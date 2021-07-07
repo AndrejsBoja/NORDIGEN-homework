@@ -1,0 +1,35 @@
+{
+    "accounts": [
+        {
+            "accountId": "ae5883c0-6cf3-11e9-9c41-e957ce7d7d69",
+            "iban": "SE3260000000000401974561",
+            "bban": "401974561",
+            "currency": "SEK",
+            "accountType": "Allkortskonto",
+            "bic": "HANDSESS",
+            "clearingNumber": "6295",
+            "name": "Döpt mitt konto till maxlängden 35.",
+            "ownerName": "Anna-Katarina Josefin Efraimsdotter",
+            "_links": {
+                "transactions": {
+                    "href": "https://sandbox.handelsbanken.com/openbanking/psd2/v2/accounts/ae5883c0-6cf3-11e9-9c41-e957ce7d7d69/transactions"
+                }
+            }
+        },
+        {
+            "accountId": "ae58d1e0-6cf3-11e9-9c41-e957ce7d7d69",
+            "iban": "SE6360000000000034210628",
+            "bban": "34210628",
+            "currency": "SEK",
+            "accountType": "Allkonto",
+            "bic": "HANDSESS",
+            "clearingNumber": "6295",
+            "ownerName": "My Ek",
+            "_links": {
+                "transactions": {
+                    "href": "https://sandbox.handelsbanken.com/openbanking/psd2/v2/accounts/ae58d1e0-6cf3-11e9-9c41-e957ce7d7d69/transactions"
+                }
+            }
+        }
+    ]
+}
