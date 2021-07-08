@@ -152,9 +152,7 @@
 							"",
 							"var jsonData = JSON.parse(responseBody);",
 							"",
-							"postman.setEnvironmentVariable(\"transaction_id\", jsonData.transactions.booked.find(x => !!x._links).transactionId);",
-							"",
-							""
+							"postman.setEnvironmentVariable(\"transaction_id\", jsonData.transactions.booked.find(x => !!x._links).transactionId);"
 						],
 						"type": "text/javascript"
 					}
@@ -246,7 +244,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://api-sandbox.sebgroup.com/ais/v6/identified2{{transactions_href}}",
+					"raw": "https://api-sandbox.sebgroup.com/ais/v7/identified2/accounts/6e367bd7-581a-48da-af3b-3406d4c9247b/transactions?bookingStatus=booked",
 					"protocol": "https",
 					"host": [
 						"api-sandbox",
@@ -255,8 +253,17 @@
 					],
 					"path": [
 						"ais",
-						"v6",
-						"identified2{{transactions_href}}"
+						"v7",
+						"identified2",
+						"accounts",
+						"6e367bd7-581a-48da-af3b-3406d4c9247b",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "bookingStatus",
+							"value": "booked"
+						}
 					]
 				}
 			},
@@ -266,6 +273,11 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "Token",
+				"type": "string"
+			},
 			{
 				"key": "useBrowser",
 				"value": true,
@@ -289,11 +301,6 @@
 			{
 				"key": "headerPrefix",
 				"value": "Bearer",
-				"type": "string"
-			},
-			{
-				"key": "tokenName",
-				"value": "yo",
 				"type": "string"
 			},
 			{

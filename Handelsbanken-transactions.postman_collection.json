@@ -74,6 +74,26 @@
 		"type": "oauth2",
 		"oauth2": [
 			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "authUrl",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://sandbox.handelsbanken.com/openbanking/oauth2/token/1.0",
+				"type": "string"
+			},
+			{
 				"key": "clientSecret",
 				"value": "",
 				"type": "string"
@@ -82,21 +102,6 @@
 				"key": "client_authentication",
 				"value": "body",
 				"type": "string"
-			},
-			{
-				"key": "grant_type",
-				"value": "client_credentials",
-				"type": "string"
-			},
-			{
-				"key": "authUrl",
-				"value": "https://sandbox.handelsbanken.com/openbanking/",
-				"type": "string"
-			},
-			{
-				"key": "useBrowser",
-				"value": true,
-				"type": "boolean"
 			},
 			{
 				"key": "scope",
@@ -111,11 +116,6 @@
 			{
 				"key": "accessToken",
 				"value": "",
-				"type": "string"
-			},
-			{
-				"key": "accessTokenUrl",
-				"value": "https://sandbox.handelsbanken.com/openbanking/oauth2/token/1.0",
 				"type": "string"
 			},
 			{
